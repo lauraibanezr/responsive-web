@@ -34,7 +34,7 @@ section{
     padding: 2rem 7%;
 }
 
-/*GOOGLE CROME*/
+/*GOOGLE CROME*//*
 html::-webkit-scrollbar{
     width: .8rem;
 }
@@ -45,8 +45,9 @@ html::-webkit-scrollbar-track{
 
 html::-webkit-scrollbar-thumb{
     background-color: white;
-    border-radius: 5rem;
+    border-radius: 1rem;
 }
+*/
 
 /*BARRA DE NAVEGACION*/
 .header{
@@ -192,6 +193,9 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+#principal-btn {
+    width: 20rem;
+}
 
 .btn:hover{
     letter-spacing: .2rem;
