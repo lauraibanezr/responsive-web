@@ -26,6 +26,14 @@ html{
    scroll-padding-top: 0;
 }
 
+body{
+    background: var(--bg);
+}
+
+section{
+    padding: 2rem 7%;
+}
+
 /*GOOGLE CROME*/
 html::-webkit-scrollbar{
     width: .8rem;
@@ -39,11 +47,6 @@ html::-webkit-scrollbar-thumb{
     background-color: white;
     border-radius: 5rem;
 }
-
-body{
-    background: var(--bg);
-}
-
 
 /*BARRA DE NAVEGACION*/
 .header{
@@ -195,7 +198,32 @@ body{
     
 }
 
+.home{
+    min-height: 100vh;
+    display: flex; /*como es solo hay un div en el home no afecta en nada solo en los demas propiedades a utilizar*/
+    align-items: center; /*centrar los elementos horizontalmente*/
+    background: url(../images/home-img.jpeg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
 
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.home .content p{
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: bisque;
+}
 
 
 
@@ -258,6 +286,12 @@ body{
 }
 
 @media(max-width:768px){
+
+    section{
+        padding: 2rem;
+    }
+    
+
     #menu-btn{
         display: inline-block;
     }
@@ -276,7 +310,7 @@ body{
 
     .header .navbar a{
         color: var(--black);
-        display: block; /*una detras de otra*/
+        display: block; /*una detras de otra hacia abajo*/
         margin: 1.5rem;
         padding: .5rem;
 
@@ -286,6 +320,21 @@ body{
         width: 90%;
         right: 2rem;
     }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
 
 }
 
